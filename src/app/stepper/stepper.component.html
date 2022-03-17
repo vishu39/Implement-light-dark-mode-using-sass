@@ -1,0 +1,52 @@
+<div class="stepper">
+  <mat-stepper>
+    <mat-step label="Step 1" state="phone">
+      <div>
+        <form class="form">
+          <span>
+            <label>name</label>
+            <input type="text" />
+          </span>
+          <span>
+            <label>password</label>
+            <input type="password" />
+          </span>
+
+          <span>
+            <label>Age</label>
+            <input type="number" />
+          </span>
+          <span>
+            <label>Number</label>
+            <input type="tel" />
+          </span>
+          <span>
+            <label>Email</label>
+            <input type="email" />
+          </span>
+        </form>
+      </div>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step label="Step 2" state="chat">
+      <p>Socialize with each other.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step label="Step 3">
+      <p>You're welcome.</p>
+    </mat-step>
+
+    <!-- Icon overrides. -->
+    <ng-template matStepperIcon="phone">
+      <mat-icon>call_end</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="chat">
+      <mat-icon>forum</mat-icon>
+    </ng-template>
+  </mat-stepper>
+</div>
